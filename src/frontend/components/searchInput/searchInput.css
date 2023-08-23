@@ -1,0 +1,47 @@
+.search-card-container-heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin: 2rem 1rem;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.navbar-search-input {
+  border: 1px solid var(--mg-border-color);
+  border-radius: 8px;
+  padding: 0.5rem 0rem 0.5rem 2rem;
+  font-size: 14px;
+  width: 80%;
+}
+.navbar-search-icon {
+  color: grey;
+  font-weight: normal;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+
+/********** Responsive Screens ***********/
+@media (max-width: 768px) {
+  .navbar-search-icon {
+    left: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .navbar-search-input {
+    width: 70%;
+    margin-right: 1rem;
+  }
+  .navbar-search-icon {
+    left: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-search-icon {
+    left: 15px;
+  }
+}

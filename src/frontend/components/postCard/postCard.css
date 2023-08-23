@@ -1,0 +1,122 @@
+/********* Post Card  **********/
+
+.post-card {
+  background-color: white;
+  border: 1px solid var(--mg-border-color);
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 0;
+  width: 460px;
+}
+
+/************ post card header ********/
+.post-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border-bottom: 1px solid var(--mg-border-color);
+}
+.post-card-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.post-card-user-img,
+.post-card-user-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.post-card-user-details {
+  text-align: left;
+}
+.user-name {
+  font-size: 14px;
+}
+.at-user-name {
+  font-size: 12px;
+  color: var(--mg-primary-text);
+}
+.post-alter-link {
+  position: relative;
+}
+.three-dot-icon {
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 5px 10px 0;
+  z-index: -10;
+}
+.three-dot-icon:hover {
+  color: var(--mg-primary-color);
+}
+.post-alter-options {
+  position: absolute;
+  left: -3.5rem;
+  background-color: white;
+  text-align: left;
+  border: 1px solid var(--mg-border-color);
+  z-index: 10;
+}
+.post-alter-options p {
+  border-bottom: 1px solid var(--mg-border-color);
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+.post-alter-options p:hover {
+  background-color: lightgrey;
+}
+
+/*************** content **************/
+.post-card-content-image {
+  width: 100%;
+  height: 500px;
+  object-fit: content;
+}
+.post-card-content-text {
+  font-size: 14px;
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--mg-border-color);
+}
+/************* Post Card Icons *********/
+.post-card-icons {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.post-card-icons-leftgroup {
+  display: flex;
+  gap: 1rem;
+}
+.post-card-icon {
+  font-size: 20px;
+}
+.post-card-like-count-container {
+  text-align: left;
+  padding: 0 0 0.5rem 0.5rem;
+  font-size: 14px;
+}
+.post-card-like-count {
+  font-weight: bold;
+}
+
+/********* Responsive Screens *********/
+
+@media (max-width: 470px) {
+  .post-card {
+    width: 100%;
+    border-radius: 0;
+  }
+  .post-card-content-image {
+    height: 400px;
+  }
+  .post-alter-options {
+    left: -4.5rem;
+  }
+}

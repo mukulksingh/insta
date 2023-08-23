@@ -1,0 +1,49 @@
+.root {
+  display: flex;
+  width: 100%;
+}
+.primary-navbar {
+  position: sticky;
+  top: 0;
+  height: 90dvh;
+  width: 16%;
+  z-index: 90;
+}
+.main-content-container {
+  width: 84%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 0 0;
+}
+
+.secondary-navbar {
+  display: none;
+}
+
+/********* Responsive Screens **********/
+@media (max-width: 1264px) {
+  .primary-navbar {
+    width: 6%;
+  }
+  .main-content-container {
+    width: 94%;
+  }
+}
+/********* small Screen **********/
+@media (max-width: 768px) {
+  .primary-navbar {
+    width: 0%;
+  }
+  .main-content-container {
+    width: 100%;
+  }
+  .secondary-navbar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .main-content-container {
+    padding: 4rem 0 0 0;
+  }
+}

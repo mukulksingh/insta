@@ -1,0 +1,121 @@
+.new-post-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.5);
+  z-index: 100;
+}
+.new-post-modal {
+  background-color: white;
+  text-align: left;
+  padding: 2rem;
+}
+
+.new-post-modal-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 3rem;
+}
+.new-post-modal-heading {
+  font-size: 24px;
+}
+.new-post-modal img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.new-post-input-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+}
+.new-post-input-area textarea {
+  padding: 1rem;
+}
+.new-post-modal-icon-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.new-post-modal-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.new-post-modal-icon {
+  cursor: pointer;
+}
+.smile-icon:hover {
+  color: rgb(255, 215, 0);
+}
+.camera-icon:hover {
+  color: var(--mg-primary-color);
+}
+.new-post-btn {
+  padding: 0.3rem 1rem;
+  border: 2px solid var(--mg-primary-color);
+  color: var(--mg-primary-color);
+  font-weight: bold;
+  background-color: white;
+  border-radius: 8px;
+}
+.new-post-btn:hover {
+  color: white;
+  background-color: var(--mg-primary-color);
+}
+.new-post-btn:disabled {
+  color: grey;
+  background-color: lightgrey;
+  border: 2px solid grey;
+}
+
+.emoji-picker-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 1, 1, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******** Responsive Screens ***********/
+
+@media (max-width: 768px) {
+  .new-post-modal {
+    padding: 1rem;
+  }
+  .new-post-modal-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .new-post-input-area textarea {
+    padding: 0.5rem;
+    width: 300px;
+  }
+  .emoji-picker-container {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .new-post-input-area textarea {
+    width: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .new-post-input-area textarea {
+    width: 200px;
+    height: 100px;
+  }
+}
