@@ -4,7 +4,7 @@ MyGram is a social media app, which replicates instagram(not fully). So, explore
 ## How to install and run locally ?
 
 ```
-$ git clone https://github.com/jugeshraghav/mygram.git
+$ git clone https://github.com/mukulksingh/mygram.git
 $ cd mygram
 $ npm install
 $ npm start
